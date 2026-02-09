@@ -14,10 +14,10 @@ public class Cliente {
 
             Scanner sc = new Scanner(System.in);
 
-            System.out.print("Número de empleados: ");
+            System.out.print("Numero de empleados: ");
             int empleados = sc.nextInt();
 
-            System.out.print("Número de meses: ");
+            System.out.print("Numero de meses: ");
             int meses = sc.nextInt();
 
             double[][] matriz = obj.generarMatriz(empleados, meses);
