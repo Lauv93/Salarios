@@ -62,4 +62,4 @@ public class SalariosImpl extends UnicastRemoteObject implements SalariosInterfa
         }
         return total;
     }
-}
+} // implements
