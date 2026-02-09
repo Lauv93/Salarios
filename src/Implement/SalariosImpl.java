@@ -18,7 +18,10 @@ public class SalariosImpl extends UnicastRemoteObject implements SalariosInterfa
 
         for (int i = 0; i < empleados; i++) {
             for (int j = 0; j < meses; j++) {
-                matriz[i][j] = 800 + rand.nextDouble() * 2200; // salarios entre 800 y 3000
+                // matriz[i][j] = 800 + rand.nextDouble() * 2200; // salarios entre 800 y 3000
+                double salario = 800 + rand.nextDouble() * 2200;
+                  matriz[i][j] = Math.round(salario * 100.0) / 100.0;
+              
             }
         }
         return matriz;
