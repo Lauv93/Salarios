@@ -11,11 +11,11 @@ public class Servidor {
             Registry registry;
 
             try {
-                // intenta crear el registry
+                
                 registry = LocateRegistry.createRegistry(1099);
                 System.out.println("Registry creado en puerto 1099");
             } catch (Exception e) {
-                // si ya existe, solo lo obtiene
+                
                 registry = LocateRegistry.getRegistry(1099);
                 System.out.println("Registry activo");
             }
