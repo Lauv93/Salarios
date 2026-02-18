@@ -17,7 +17,7 @@ public class Servidor {
             } catch (Exception e) {
                 // si ya existe, solo lo obtiene
                 registry = LocateRegistry.getRegistry(1099);
-                System.out.println("Registry ya activo");
+                System.out.println("Registry activo");
             }
 
             SalariosInterface obj = new SalariosImpl();
