@@ -17,13 +17,13 @@ public class Servidor {
             } catch (Exception e) {
                 // si ya existe, solo lo obtiene
                 registry = LocateRegistry.getRegistry(1099);
-                System.out.println("Registry ya estaba activo");
+                System.out.println("Registry ya activo");
             }
 
             SalariosInterface obj = new SalariosImpl();
             registry.rebind("Salarios", obj);
 
-            System.out.println("Servidor RMI listo...");
+            System.out.println("Servidor RMI arriba");
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -31,7 +31,7 @@ public class ClienteGUI extends JFrame {
             Registry registry = LocateRegistry.getRegistry("localhost", 1099);
             obj = (SalariosInterface) registry.lookup("Salarios");
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Error conectando al servidor RMI");
+            JOptionPane.showMessageDialog(this, "Error conectando a RMI");
         }
     }
 
